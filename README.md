@@ -6,11 +6,11 @@ Everything lives in [SKILL.md](skills/fgilio-review/SKILL.md).
 
 ## Modes
 
-One skill, three modes — selected by the first argument:
+One skill, three modes, selected by the first argument:
 
-- **report (default)** — `/fgilio-review` presents the merged findings. Writes no code.
-- **address** — `/fgilio-review address` applies the fixes: low-risk changes directly, risky ones only after confirming with you. In a non-interactive routine it posts the risky ones as PR comments instead of blocking.
-- **comment** — `/fgilio-review comment` posts the findings as a single PR review, with one inline comment per finding at the relevant lines where possible.
+- **report (default)**: `/fgilio-review` presents the merged findings. Writes no code.
+- **address**: `/fgilio-review address` applies the fixes: low-risk changes directly, risky ones only after confirming with you. In a non-interactive routine it posts the risky ones as PR comments instead of blocking.
+- **comment**: `/fgilio-review comment` posts the findings as a single PR review, with one inline comment per finding at the relevant lines where possible.
 
 Optionally scope the review (without `--scope` the most useful one is inferred: uncommitted changes, else the branch, else the project):
 
@@ -24,7 +24,7 @@ The commands above assume a skills-directory install. Installed as a plugin, ski
 
 ## Requirements
 
-The `coding` and `polish` skills must be available in the session — this skill orchestrates them. Both ship from the same [fgilio marketplace](https://github.com/fgilio/claude-plugins). `comment` mode needs whatever GitHub tooling the session provides for posting PR review comments.
+The `coding` and `polish` skills must be available in the session, since this skill orchestrates them. Both ship from the same [fgilio marketplace](https://github.com/fgilio/claude-plugins). `comment` mode needs whatever GitHub tooling the session provides for posting PR review comments.
 
 ## Installation
 
