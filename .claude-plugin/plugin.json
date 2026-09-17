@@ -1,6 +1,7 @@
 {
   "name": "fgilio-review",
   "description": "Audit code through Franco's two review lenses (the coding and polish skills) merged into one prioritized list.",
+  "dependencies": ["coding", "polish"],
   "author": {
     "name": "Franco Gilio"
   },

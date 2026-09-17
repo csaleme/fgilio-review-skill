@@ -30,7 +30,7 @@ The `coding` and `polish` skills must be available in the session, since this sk
 
 ### As a plugin
 
-Installs through the [fgilio marketplace](https://github.com/fgilio/claude-plugins) and receives updates as the skill evolves:
+Installs through the [fgilio marketplace](https://github.com/fgilio/claude-plugins) and receives updates as the skill evolves. The manifest declares `coding` and `polish` as [plugin dependencies](https://code.claude.com/docs/en/plugin-dependencies), so the install pulls them in:
 
 ```
 /plugin marketplace add fgilio/claude-plugins
@@ -38,6 +38,8 @@ Installs through the [fgilio marketplace](https://github.com/fgilio/claude-plugi
 ```
 
 ### Manual clone
+
+Install the [coding skill](https://github.com/fgilio/coding-skill#manual-clone) and the [polish skill](https://github.com/fgilio/polish-skill#manual-clone) first. Manual clones do not resolve plugin dependencies.
 
 Clone and symlink into your Claude Code skills directory:
 
